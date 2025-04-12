@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Task Manager</title>
+</head>
+<body>
+  <div class="main  w-full bg-zinc-900 min-h-screen justify-center p-5  text-white">
+    <form action="/edit" method= "post">
+      <input class= "block w-1/4 text-zinc-500 rounded-md outline-none px-5 py-2 bg-zinc-800" type="text" placeholder="Previous Title" name="PrevFileName" value="<%= fileName %> "> 
+      <input class="block px-5 w-1/4 mt-2 outline-none rounded-md py-2 bg-zinc-800 resize-none" placeholder="New filename" name="NewFileName">
+      <input class= "block bg-zinc-200 text-fuchsia-500 px-5 py-2 rounded-md cursor-pointer mt-2" type="submit" value="Change FileName">
+    </form>
+  </div>
+</body>
+</html>
